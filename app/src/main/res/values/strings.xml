@@ -5,6 +5,17 @@
     <string name="viewEvents">View Events</string>
     <string name="clear">Clear Events</string>
     <string name="clearLast">Clear Last Record</string>
+    <string name="eventName"> Event Name: </string>
+    <string name="eventDate">Date</string>
+    <string name="eventTime">Time</string>
+    <string-array name="events">
+        <item>Morning Walk</item>
+        <item>Afternoon Walk</item>
+        <item>Evening Walk</item>
+        <item>Additional Walk</item>
+    </string-array>
+
+
     <string name="settingText">Sabrina Umeris Dog walking recorder App! This app tracks the days
         and times of when you walked your dog so you never forget!</string>
 

@@ -24,6 +24,10 @@ public class Settings extends AppCompatActivity {
 
     }
 
-    public void onSettingsClick(View view) {
+
+    public void onViewEvents(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
     }
 }

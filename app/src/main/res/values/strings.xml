@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Project 1 Sabrina Umeri</string>
+    <string name="recordEvent">Record Event</string>
+    <string name="settings">Settings</string>
+    <string name="viewEvents">View Events</string>
+    <string name="clear">Clear Events</string>
+    <string name="clearLast">Clear Last Record</string>
+    <string name="settingText">Sabrina Umeris Dog walking recorder App! This app tracks the days
+        and times of when you walked your dog so you never forget!</string>
+
+</resources>

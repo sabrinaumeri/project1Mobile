@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_2"
-    android:onClick="onClickButton"
     tools:context=".MainActivity">
 
     <Button
@@ -37,12 +36,12 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/background_2"
-        app:cardBackgroundColor="#9CE6E5"
+        android:background="@color/white"
+        app:cardBackgroundColor="#009CE6E5"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -53,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FFFFFF"
             android:orientation="vertical">
 
             <LinearLayout
@@ -66,8 +66,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/eventName"
+                    android:textAlignment="center"
                     android:textColor="#000000"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
 
                 <Spinner
                     android:id="@+id/spinner2"
@@ -83,19 +84,28 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EditDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/eventDate" />
+                    android:background="#FFFFFF"
+                    android:hint="@string/eventDate"
+                    android:onClick="showDatePickerDialog"
+                    android:focusable="false"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTime"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/eventTime" />
+                    android:background="#FFFFFF"
+                    android:focusable="false"
+                    android:hint="@string/eventTime"
+                    android:onClick="showTimePickerDialog" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
@@ -105,8 +115,9 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="164dp"
-        android:text="@string/recordEvent"
+        android:layout_marginBottom="16dp"
+        android:onClick="onClickAddEvent"
+        android:text="@string/addEvent"
         app:layout_constraintBottom_toTopOf="@+id/buttonRecordEvent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
